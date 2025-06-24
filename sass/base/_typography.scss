@@ -1,0 +1,58 @@
+@use '../abstracts' as *;
+@use '../base/fonts' as *;
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+*{
+  font-family:  "Poppins", sans-serif;
+}
+
+header{
+  a{font-size: 18px;}
+}
+
+main{
+  h1{
+    font-size: 60px;   
+    color: $primary-color;
+    line-height: 80px;
+  }
+  p{
+    font-size: 20px;
+    color: $text-color;
+    line-height: 40px;
+  }
+
+  .cards{
+    h2{
+      font-size: 36px;
+      color: $primary-color;
+    }
+
+    p{
+      font-size: 18px;
+      color: $text-color;
+      line-height: 20px;
+    }
+  }
+
+  .comments{
+
+    p{
+      color: black;
+      font-size: 18px;
+      line-height: 30px;
+      margin: 0;
+    }
+    span{
+      color: $primary-color;
+      font-size: 18px;
+      font-weight: 800;
+    }
+  }
+}
